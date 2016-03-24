@@ -1,8 +1,11 @@
 <IfModule mod_rewrite.c>
   Options +FollowSymlinks
+#  重写开启
   RewriteEngine On
 
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-f
+#  去除index.php文件名
+#  正则吗，后面再说
   RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
 </IfModule>

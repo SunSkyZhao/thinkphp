@@ -19,8 +19,10 @@ define('APP_DEBUG',True);
 
 // 定义应用目录
 define('APP_PATH','./Application/');
+// 定义应用目录
+//define('APP_PATH','./Apps/');
+// 绑定入口文件到Admin模块访问
+//define('BIND_MODULE','Admin');//会在第一加载时生成admin模块
 
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
-
-// 亲^_^ 后面不需要任何代码了 就是如此简单
