@@ -9,4 +9,8 @@ return array(
     'DB_PORT'=>3306,// 端口
     'DB_PREFIX'=>'think_',// 数据库表前缀
     'DB_CHARSET'=>'utf8',// 数据库字符集
+//视图配置
+//    'DEFAULT_V_LAYER'       =>  'Template',//配置视图所在目录
+//    'TMPL_TEMPLATE_SUFFIX'=>'.tpl'//配置试图文件的后缀名
+//    'TMPL_FILE_DEPR'=>'_'//将view文件夹从视图目录中去点，形成Home/User_index这样的目录结构
 );

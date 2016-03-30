@@ -10,7 +10,8 @@ use Think\Controller;
 
 class FormController extends Controller{
     public function add(){
-        $this->display();
+        $this->display('Index:index');
+//        $this->display('read', 'utf-8', 'text/xml');//支持多个参数
     }
     /*
     * 插入数据方法

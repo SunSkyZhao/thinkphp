@@ -1,8 +1,39 @@
 <html>
+<include file="./Application/Home/View/Index/hello2.html" />
 <head>
     <title>hello {$name}</title>
 </head>
 <body>
-hello, {$name}!
+<volist name="data" id="vo">
+    {$vo.title}:{$vo.content}
+</volist>
+<!-- volist循环输出其中的5--10条数据 -->
+<volist name="list" id="vo" offset="5" length='10'>
+    {$vo.name}
+</volist>
+<!-- 条件输出 switch用法-->
+<switch name="User.level">
+    <case value="1">value1</case>
+    <case value="2">value2</case>
+    <default />default
+</switch>
+<!-- 比较标签 -->
+<eq name="name" value="value">
+    相等
+    <else/>
+    不相等
+</eq>
+<!-- 范围标签  in、notin、between用法类似-->
+<in name="id" value="1,2,3">
+    id在范围内
+</in>
+<notin name="id" value="1,2,3">
+    id不在范围内
+</notin>
+<in name="id" value="1,2,3">
+    id在范围内
+    <else/>
+    id不在范围内
+</in>
 </body>
 </html>

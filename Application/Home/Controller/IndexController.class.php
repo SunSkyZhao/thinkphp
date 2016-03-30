@@ -3,9 +3,9 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
-        $Data = M('Data');
-        $name = $Data -> find('1');
-        $this->assign('name',$name['data']);
+        $Data = M('form');
+        $name = $Data -> where('1=1')-> select();
+        $this->assign('data',$name);
         $this->display();
     }
 
