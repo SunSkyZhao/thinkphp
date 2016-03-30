@@ -13,4 +13,8 @@ return array(
 //    'DEFAULT_V_LAYER'       =>  'Template',//配置视图所在目录
 //    'TMPL_TEMPLATE_SUFFIX'=>'.tpl'//配置试图文件的后缀名
 //    'TMPL_FILE_DEPR'=>'_'//将view文件夹从视图目录中去点，形成Home/User_index这样的目录结构
+    //参数设置
+//    'URL_PARAMS_BIND_TYPE'  =>  1, // 设置参数绑定按照变量顺序绑定
+    //如果不按照顺序绑定，/id/1/type/2访问的效果和type/2/id/1是一样的
+//    'URL_PARAMS_BIND'       =>  false //关闭参数绑定，不会再传参数
 );
