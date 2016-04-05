@@ -16,5 +16,12 @@ return array(
     //参数设置
 //    'URL_PARAMS_BIND_TYPE'  =>  1, // 设置参数绑定按照变量顺序绑定
     //如果不按照顺序绑定，/id/1/type/2访问的效果和type/2/id/1是一样的
-//    'URL_PARAMS_BIND'       =>  false //关闭参数绑定，不会再传参数
+//    'URL_PARAMS_BIND'       =>  false //关闭参数绑定，不会再传参数，将不会获取到get值
+//默认错误跳转对应的模板文件
+//    'TMPL_ACTION_ERROR' => THINK_PATH . 'Tpl/dispatch_jump.tpl',
+//默认成功跳转对应的模板文件
+//    'TMPL_ACTION_SUCCESS' => THINK_PATH . 'Tpl/dispatch_jump.tpl',
+//    'TMPL_ACTION_SUCCESS' => 'Common@Public/
+//操作绑定到类(暂时没发现有什么卵用，开启之后寻址url会不一样)
+//    'ACTION_BIND_CLASS'    =>    True,
 );
